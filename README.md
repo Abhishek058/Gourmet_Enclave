@@ -29,7 +29,7 @@ Experience the epitome of culinary delight through our online reservation platfo
 
 For developers:
 
-1. Clone the repository: `git clone https://github.com/yourusername/gourmet-enclave.git`
+1. Clone the repository: `git clone https://github.com/Abhishek058/gourmet-enclave.git`
 2. Navigate to the project directory: `cd gourmet-enclave`
 3. Open `index.html` in your preferred web browser.
 
@@ -39,12 +39,6 @@ We value your feedback! If you encounter any issues or have suggestions, please 
 
 ## Contributors
 
-- [Your Name](https://github.com/Abhishek058)
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
+- [Abhishek](https://github.com/Abhishek058)
 
 Embark on a culinary journey like no other with Gourmet Enclave. Elevate your dining experience today!
