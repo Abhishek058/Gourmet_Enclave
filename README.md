@@ -17,8 +17,7 @@ Experience the epitome of culinary delight through our online reservation platfo
 
 ## How to Use
 
-![image](https://github.com/Abhishek058/Gourmet_Enclave/assets/101443776/c79e5706-e0c3-4507-8e3d-196029eda6b0)
-
+![image](https://github.com/Abhishek058/Gourmet_Enclave/assets/101443776/c2be7011-d0ae-4667-9448-a2e103f0db45)
 
 1. Visit our website: [www.gourmetenclave.com](https://www.gourmetenclave.com).
 2. Browse the menu and explore our culinary offerings.
@@ -26,11 +25,7 @@ Experience the epitome of culinary delight through our online reservation platfo
 4. Fill in your details and group size.
 5. Confirm your reservation and receive a confirmation email.
 
-![image](https://github.com/Abhishek058/Gourmet_Enclave/assets/101443776/a13694e7-0423-4471-aff3-0ffc1201c453)
-
-## Installation
-
-No installation required for users. This website is accessible through web browsers on various devices.
+![image](https://github.com/Abhishek058/Gourmet_Enclave/assets/101443776/37fe8986-11be-4212-b1c2-057f988ed7cf)
 
 For developers:
 
