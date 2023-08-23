@@ -1,8 +1,26 @@
+import React, { useState } from "react";
+import loader from "./assets/loader.gif";
+import "./index.css";
+import Navbar from "./Navbar";
+
 function App() {
+  const [load, setLoad] = useState(true);
+  setTimeout(() => {
+    setLoad(false);
+  }, 4500);
+
   return (
-    <div className="App h-screen w-screen flex flex-col items-center justify-center">
-      <h1 className="text-5xl">Gourmet Enclave</h1>
-    </div>
+    <>
+      {load ? (
+        <div className="loader-div">
+          <img src={loader} alt="Loading..." />
+        </div>
+      ) : (
+        <div className="App">
+          <Navbar/>
+        </div>
+      )}
+    </>
   );
 }
 
