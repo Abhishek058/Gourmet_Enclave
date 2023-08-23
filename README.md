@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Gourmet Enclave Order Booking Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Gourmet Enclave Restaurant Order Booking Website! 
 
-## Available Scripts
+<img src="https://github.com/Abhishek058/Gourmet_Enclave/assets/101443776/42af2402-849a-4566-9d5a-0645ed790432" alt="Gourmet Enclave Logo" width="300" height="300">
 
-In the project directory, you can run:
+Experience the epitome of culinary delight through our online reservation platform. Immerse yourself in a world of gourmet flavors, where luxury meets taste. 
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screenshot 2023-08-21 141135](https://github.com/Abhishek058/Gourmet_Enclave/assets/101443776/c9f19b96-eac6-429c-b70d-333f5e3ab231)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Seamless Reservations**: Easily book your table online, ensuring a hassle-free dining experience.
+- **Exquisite Flavors**: Indulge in a diverse menu crafted to tantalize your taste buds.
+- **Ambiance of Luxury**: Immerse yourself in a lavish atmosphere that complements the fine dining experience.
+- **Effortless Navigation**: User-friendly interface for smooth navigation and reservation management.
+- **Responsive Design**: Accessible across devices, ensuring you can make reservations anytime, anywhere.
 
-### `npm test`
+## How to Use
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Screenshot 2023-08-21 141154](https://github.com/Abhishek058/Gourmet_Enclave/assets/101443776/fd7911a1-da43-455c-9b08-2dd61c0f49c8)
 
-### `npm run build`
+1. Visit our website: [www.gourmetenclave.com](https://www.gourmetenclave.com).
+2. Browse the menu and explore our culinary offerings.
+3. Select your preferred date and time for the reservation.
+4. Fill in your details and group size.
+5. Confirm your reservation and receive a confirmation email.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For developers:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository: `git clone https://github.com/yourusername/gourmet-enclave.git`
+2. Navigate to the project directory: `cd gourmet-enclave`
+3. Open `index.html` in your preferred web browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Feedback
 
-### `npm run eject`
+We value your feedback! If you encounter any issues or have suggestions, please [submit an issue](https://github.com/Abhishek058/gourmet-enclave/issues).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributors
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Abhishek](https://github.com/Abhishek058)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Embark on a culinary journey like no other with Gourmet Enclave. Elevate your dining experience today!
