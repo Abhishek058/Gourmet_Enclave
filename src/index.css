@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Roboto:wght@300&display=swap");
+
 * {
   font-family: "Cormorant Upright";
   margin: 0;
@@ -21,12 +22,20 @@
 .nav-links {
   display: none;
 }
-.nav-links a {
-  font-family: "Roboto";
+
+.nav-links:hover .pages-div {
+  display: block;
 }
+
 @media (min-width: 800px) {
   .nav-links {
     display: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  .pages-div {
+    display: none;
   }
 }
 
