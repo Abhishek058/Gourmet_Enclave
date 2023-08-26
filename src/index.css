@@ -23,8 +23,16 @@
   display: none;
 }
 
-.nav-links:hover .pages-div {
+.blogli:hover .blogline {
   display: block;
+}
+
+.page:hover .blogline {
+  display: block;
+}
+
+.hiddenNavList > li {
+  padding: 5px;
 }
 
 @media (min-width: 800px) {
@@ -44,6 +52,9 @@
     display: flex;
   }
   .hamBars {
+    display: none;
+  }
+  .hiddenav {
     display: none;
   }
 }
