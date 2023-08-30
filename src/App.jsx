@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import loader from "./assets/loader.gif";
 import "./index.css";
 import Navbar from "./Navbar";
+import Header from "./Header";
 
 function App() {
   const [load, setLoad] = useState(true);
@@ -18,6 +19,7 @@ function App() {
       ) : (
         <div className="App">
           <Navbar/>
+          <Header/>
         </div>
       )}
     </>

@@ -30,7 +30,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="navbar flex sticky top-0 h-24 bg-black items-center justify-center">
+      <div className="navbar flex sticky top-0 h-24 bg-black items-center justify-center z-[1000]">
         <h1 className="text-white absolute left-7 text-5xl">Gourmet</h1>
         <div className="nav-links text-customYellow flex">
           {items.map((item) => (
@@ -117,7 +117,7 @@ function Navbar() {
         </div>
       </div>
       <div
-        className={`hiddenav w-screen h-screen bg-black flex flex-col items-center justify-items-center absolute top-0 ${
+        className={`hiddenav w-full h-screen bg-black flex flex-col items-center justify-items-center absolute top-0 z-[1100] ${
           HiddenNav ? "translate-y-0" : "-translate-y-full"
         } transition-transform duration-500`}
       >
@@ -130,8 +130,8 @@ function Navbar() {
         >
           <FaTimes className="text-white text-2xl" />
         </div>
-        <div className="text-white w-screen h-screen flex items-center">
-          <ul className="hiddenNavList ml-10 text-2xl font-bold ">
+        <div className="text-white w-full h-screen flex items-center">
+          <ul className="hiddenNavList ml-10 text-2xl font-bold">
             <li className="transition delay-100 hover:text-customYellow">
               <a href="">HOME</a>
             </li>
