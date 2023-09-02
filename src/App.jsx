@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import loader from "./assets/loader.gif";
 import "./index.css";
-import Navbar from "./Navbar";
-import Header from "./Header";
+import Navbar from "./Components/Navbar";
+import Header from "./Components/Header";
 
 function App() {
   const [load, setLoad] = useState(true);

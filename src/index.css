@@ -65,14 +65,15 @@ body {
   }
   .textHeaderDiv {
     width: 50%;
+    padding-left: 50px;
   }
-  .textHeaderDiv h2{
+  .textHeaderDiv h2 {
     font-size: 23px;
   }
-  .textHeaderDiv h1{
+  .textHeaderDiv h1 {
     font-size: 90px;
   }
-  .textHeaderDiv p{
+  .textHeaderDiv p {
     font-size: 16px;
     width: 75%;
   }
@@ -81,6 +82,25 @@ body {
   }
   .imageheaderDiv img {
     width: 43%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .textHeaderDiv h2 {
+    font-size: 30px;
+  }
+  .textHeaderDiv h1 {
+    font-size: 120px;
+  }
+  .textHeaderDiv p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .textHeaderDiv {
+    padding-top: 100px;
+    justify-content: flex-start;
   }
 }
 

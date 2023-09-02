@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./index.css";
-import headerImg1 from "./assets/headerImg.png";
-import headerImg2 from "./assets/headerImg2.png";
-import headerImg3 from "./assets/headerImg3.png";
+import "../";
+import headerImg1 from "../assets/headerImg.png";
+import headerImg2 from "../assets/headerImg2.png";
+import headerImg3 from "../assets/headerImg3.png";
 
 function Header() {
   const images = [headerImg1, headerImg2, headerImg3];
