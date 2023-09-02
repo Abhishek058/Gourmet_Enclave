@@ -7,6 +7,7 @@ function Navbar() {
   const [showBlog, setShowBlog] = useState(false);
   const [showHiddenNavSubList, setShowHiddenNavSubList] = useState(false);
   const [HiddenNav, setHiddenNav] = useState(false);
+  const [bodyScroll, setBodyScroll] = useState(false);
 
   const items = [
     { id: 1, text: "HOME", link: "", arrow: false },
@@ -30,7 +31,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="navbar flex sticky top-0 h-24 bg-black items-center justify-center z-[1000]">
+      <div className="navbar sticky top-0 w-full flex h-24 bg-black items-center justify-center z-[1000]">
         <h1 className="text-white absolute left-7 text-5xl">Gourmet</h1>
         <div className="nav-links text-customYellow flex">
           {items.map((item) => (
@@ -59,7 +60,7 @@ function Navbar() {
             </li>
           ))}
         </div>
-        <div className="search bg-transparent hidden flex items-center absolute right-10 border-b">
+        <div className="search bg-transparent hidden flex items-center absolute right-10 border-b border-gray-500">
           <input
             className="input-text text-gray-300 outline-none bg-transparent p-2"
             type="text"
@@ -107,11 +108,17 @@ function Navbar() {
             </li>
           ))}
         </div>
-        <div className="hamBars absolute right-7">
+        <div className="hamBars absolute right-7" id="toggleScrollButton">
           <FaBars
             className="text-white text-2xl"
             onClick={() => {
               setHiddenNav(!HiddenNav);
+              setBodyScroll(!bodyScroll);
+              if (bodyScroll) {
+                document.body.style.overflow = "auto";
+              } else {
+                document.body.style.overflow = "hidden";
+              }
             }}
           />
         </div>
@@ -126,6 +133,12 @@ function Navbar() {
           className="hiddenNavBars absolute right-7 top-10"
           onClick={() => {
             setHiddenNav(!HiddenNav);
+            setBodyScroll(!bodyScroll);
+              if (bodyScroll) {
+                document.body.style.overflow = "auto";
+              } else {
+                document.body.style.overflow = "hidden";
+              }
           }}
         >
           <FaTimes className="text-white text-2xl" />

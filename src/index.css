@@ -8,6 +8,11 @@
   font-family: "Cormorant Upright";
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: black;
 }
 
 .loader-div {
@@ -35,9 +40,47 @@
   padding: 5px;
 }
 
+/* ----------------- Header ---------------- */
+
+/* ----------------- Scrollbar ---------------- */
+
+::-webkit-scrollbar {
+  background: #0b0b0b;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272727;
+  border-radius: 10px;
+}
+
+/* ----------------- Responsiveness ---------------- */
+
 @media (min-width: 800px) {
   .nav-links {
     display: flex;
+  }
+  .headerMainDiv {
+    flex-direction: row;
+  }
+  .textHeaderDiv {
+    width: 50%;
+  }
+  .textHeaderDiv h2{
+    font-size: 23px;
+  }
+  .textHeaderDiv h1{
+    font-size: 90px;
+  }
+  .textHeaderDiv p{
+    font-size: 16px;
+    width: 75%;
+  }
+  .imageheaderDiv {
+    width: 50%;
+  }
+  .imageheaderDiv img {
+    width: 43%;
   }
 }
 
@@ -59,6 +102,5 @@
   }
 }
 
-
-/* ----------------- Header ---------------- */
-
+@media (min-width: 800px) {
+}
