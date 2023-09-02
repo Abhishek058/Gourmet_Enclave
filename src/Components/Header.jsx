@@ -19,7 +19,7 @@ function Header() {
   }, []);
 
   return (
-    <div className="header items-center justify-center text-white relative">
+    <div className="header flex justify-center items-center text-white relative">
       <div className="headerMainDiv flex flex-col h-screen">
         <div className="textHeaderDiv flex flex-col justify-center ml-5">
           <h2 className="text-[18px]">Chase The New Flavour</h2>

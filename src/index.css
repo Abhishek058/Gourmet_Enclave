@@ -67,6 +67,9 @@ body {
     width: 50%;
     padding-left: 50px;
   }
+  .textHeaderDiv{
+    margin-top: 50px;
+  }
   .textHeaderDiv h2 {
     font-size: 23px;
   }
@@ -99,7 +102,6 @@ body {
 
 @media (max-width: 1500px) {
   .textHeaderDiv {
-    padding-top: 100px;
     justify-content: flex-start;
   }
 }
