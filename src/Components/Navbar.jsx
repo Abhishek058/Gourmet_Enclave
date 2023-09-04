@@ -132,13 +132,13 @@ function Navbar() {
         <div
           className="hiddenNavBars absolute right-7 top-10"
           onClick={() => {
-            setHiddenNav(!HiddenNav);
+            setHiddenNav(!HiddenNav); 
             setBodyScroll(!bodyScroll);
-              if (bodyScroll) {
-                document.body.style.overflow = "auto";
-              } else {
-                document.body.style.overflow = "hidden";
-              }
+            if (bodyScroll) {
+              document.body.style.overflow = "auto";
+            } else {
+              document.body.style.overflow = "hidden";
+            }
           }}
         >
           <FaTimes className="text-white text-2xl" />
@@ -187,6 +187,14 @@ function Navbar() {
               <a href="">BLOG</a>
             </li>
           </ul>
+        </div>
+        <div className="bg-transparent absolute top-40 flex items-center border-b border-gray-500">
+          <input
+            className="input-text text-gray-300 outline-none bg-transparent p-2"
+            type="text"
+            placeholder="search website"
+          />
+          <FaSearch className="text-white" />
         </div>
       </div>
     </>

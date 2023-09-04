@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../";
 import headerImg1 from "../assets/headerImg.png";
 import headerImg2 from "../assets/headerImg2.png";
 import headerImg3 from "../assets/headerImg3.png";
@@ -31,11 +30,11 @@ function Header() {
             time are milder than the sweetness of chocolate. Ultimately, there
             is ample terrain for us to explore and cultivate.
           </p>
-          <button className="bg-customYellow w-[159px] h-[46px] text-black font-bold mt-7 transition 2.5s hover:bg-black hover:text-customYellow hover:border-2 border-customYellow">
+          <button className="bg-customYellow w-[159px] h-[46px] text-black font-bold mt-7 hover:bg-black hover:text-customYellow hover:border-2 border-customYellow">
             <a href="#">Explore Menu</a>
           </button>
         </div>
-        <div className="imageheaderDiv flex justify-center mt-10">
+        <div className="imageheaderDiv flex justify-center">
           {images.map((image, index) => (
             <img
               key={index}
