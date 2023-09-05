@@ -7,7 +7,6 @@ function Navbar() {
   const [showBlog, setShowBlog] = useState(false);
   const [showHiddenNavSubList, setShowHiddenNavSubList] = useState(false);
   const [HiddenNav, setHiddenNav] = useState(false);
-  const [bodyScroll, setBodyScroll] = useState(false);
 
   const items = [
     { id: 1, text: "HOME", link: "", arrow: false },
@@ -31,7 +30,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="navbar sticky top-0 w-full flex h-24 bg-black items-center justify-center z-[1000]">
+      <div className="navbar sticky top-0 w-full flex h-20 bg-black items-center justify-center z-[1000]">
         <h1 className="text-white absolute left-7 text-5xl">Gourmet</h1>
         <div className="nav-links text-customYellow flex">
           {items.map((item) => (
@@ -69,7 +68,7 @@ function Navbar() {
           <FaSearch className="text-white" />
         </div>
         <div
-          className={`pages-div bg-black absolute top-24 ml-[-80px] w-40 h-48 ${
+          className={`pages-div bg-black absolute top-20 ml-[-80px] w-40 h-48 ${
             showPages
               ? "visible opacity-100 transition-opacity duration-500"
               : "invisible opacity-0"
@@ -89,7 +88,7 @@ function Navbar() {
           ))}
         </div>
         <div
-          className={`pages-div bg-black absolute top-24 ml-[380px] w-40 h-48 ${
+          className={`pages-div bg-black absolute top-20 ml-[380px] w-40 h-48 ${
             showBlog
               ? "visible opacity-100 transition-opacity duration-500"
               : "invisible opacity-0"
@@ -108,23 +107,17 @@ function Navbar() {
             </li>
           ))}
         </div>
-        <div className="hamBars absolute right-7" id="toggleScrollButton">
+        <div className="hamBars absolute right-7">
           <FaBars
             className="text-white text-2xl"
             onClick={() => {
               setHiddenNav(!HiddenNav);
-              setBodyScroll(!bodyScroll);
-              if (bodyScroll) {
-                document.body.style.overflow = "auto";
-              } else {
-                document.body.style.overflow = "hidden";
-              }
             }}
           />
         </div>
       </div>
       <div
-        className={`hiddenav w-full h-screen bg-black flex flex-col items-center justify-items-center absolute top-0 z-[1100] ${
+        className={`hiddenav w-full h-screen bg-black flex flex-col items-center justify-items-center fixed top-0 z-[1100] ${
           HiddenNav ? "translate-y-0" : "-translate-y-full"
         } transition-transform duration-500`}
       >
@@ -132,13 +125,7 @@ function Navbar() {
         <div
           className="hiddenNavBars absolute right-7 top-10"
           onClick={() => {
-            setHiddenNav(!HiddenNav); 
-            setBodyScroll(!bodyScroll);
-            if (bodyScroll) {
-              document.body.style.overflow = "auto";
-            } else {
-              document.body.style.overflow = "hidden";
-            }
+            setHiddenNav(!HiddenNav);
           }}
         >
           <FaTimes className="text-white text-2xl" />

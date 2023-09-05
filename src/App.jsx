@@ -4,6 +4,7 @@ import "./index.css";
 import Navbar from "./Components/Navbar";
 import Header from "./Components/Header";
 import About from "./Components/About";
+import Menu from "./Components/Menu";
 
 function App() {
   const [load, setLoad] = useState(true);
@@ -19,9 +20,10 @@ function App() {
         </div>
       ) : (
         <div className="App">
-          <Navbar/>
-          <Header/>
-          <About/>
+          <Navbar />
+          <Header />
+          <About />
+          <Menu />
         </div>
       )}
     </>

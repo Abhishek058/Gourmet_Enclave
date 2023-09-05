@@ -9,13 +9,14 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  transition: all 0.5s ease-in-out;
 }
 
 body {
   background: black;
 }
 
-button{
+button {
   transition: 0.5s;
 }
 
@@ -46,11 +47,35 @@ button{
 
 /* ----------------- About ---------------- */
 
-.AboutMain{
-  background: url('./assets/AboutBg.png');
+.AboutMain {
+  background: url("./assets/AboutBg.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
+}
+
+/* ----------------- Menu ---------------- */
+
+.MenuMain h1 {
+  position: relative;
+}
+.MenuMain h1::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #dcca87;
+  transition: 0.7s ease;
+}
+
+.MenuMain h1:hover::before {
+  width: 100%;
+}
+
+.MenuMain h1:hover{
+  transform: scale(1.1);
 }
 
 /* ----------------- Scrollbar ---------------- */
@@ -78,7 +103,7 @@ button{
     width: 50%;
     padding-left: 50px;
   }
-  .textHeaderDiv{
+  .textHeaderDiv {
     margin-top: 50px;
   }
   .textHeaderDiv h2 {
@@ -97,26 +122,27 @@ button{
   .imageheaderDiv img {
     width: 43%;
   }
-  .AboutMain{
+  .AboutMain {
     flex-direction: row;
   }
-  .aboutDiv, .historyDiv{
+  .aboutDiv,
+  .historyDiv {
     width: 40%;
   }
-  .about-h1{
+  .about-h1 {
     font-size: 45px;
   }
-  .about-p{
+  .about-p {
     font-size: 17px;
   }
-  .about-btn{
+  .about-btn {
     width: 159px;
     height: 46px;
   }
 }
 
 @media (min-width: 400px) and (max-width: 810px) {
-  .about{
+  .about {
     margin-top: 300px;
   }
 }
@@ -143,7 +169,7 @@ button{
   .pages-div {
     display: none;
   }
-  .imageheaderDiv{
+  .imageheaderDiv {
     margin-top: 50px;
   }
 }
@@ -157,9 +183,6 @@ button{
   }
   .hiddenav {
     display: none;
-  }
-  body{
-    overflow: hidden;
   }
 }
 
