@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import Header from "./Components/Header";
 import About from "./Components/About";
 import Menu from "./Components/Menu";
+import Drinks from "./Components/Drinks";
 
 function App() {
   const [load, setLoad] = useState(true);
@@ -24,6 +25,7 @@ function App() {
           <Header />
           <About />
           <Menu />
+          <Drinks />
         </div>
       )}
     </>

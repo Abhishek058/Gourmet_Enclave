@@ -74,7 +74,7 @@ button {
   width: 100%;
 }
 
-.MenuMain h1:hover{
+.MenuMain h1:hover {
   transform: scale(1.1);
 }
 
@@ -89,6 +89,10 @@ button {
   background: #272727;
   border-radius: 10px;
 }
+
+/* ----------------- Drinks ---------------- */
+
+
 
 /* ----------------- Responsiveness ---------------- */
 
@@ -138,6 +142,13 @@ button {
   .about-btn {
     width: 159px;
     height: 46px;
+  }
+  .DrinksMenu{
+    width: 100%;
+    flex-direction: row;
+  }
+  .wineMenu{
+    width: 33.33%;
   }
 }
 

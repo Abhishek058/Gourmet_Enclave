@@ -5,7 +5,7 @@ import menu3 from "../assets/Menu3.png";
 import menu4 from "../assets/MenuBg.jpg";
 
 function Menu() {
-  const [backgroundImage, setBackgroundImage] = useState(menu4);
+  const [backgroundImage, setBackgroundImage] = useState(menu3);
 
   const handleEnter = (menuImage) => {
     setBackgroundImage(menuImage);
