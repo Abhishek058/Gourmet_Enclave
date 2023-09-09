@@ -6,6 +6,7 @@ import Header from "./Components/Header";
 import About from "./Components/About";
 import Menu from "./Components/Menu";
 import Drinks from "./Components/Drinks";
+import ChefSection from "./Components/ChefSection";
 
 function App() {
   const [load, setLoad] = useState(true);
@@ -26,6 +27,7 @@ function App() {
           <About />
           <Menu />
           <Drinks />
+          <ChefSection />
         </div>
       )}
     </>

@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url(https://db.onlinewebfonts.com/c/58f07bc157a628f8269bca53316beeed?family=Bestermind);
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Roboto:wght@300&display=swap");
-
 * {
   font-family: "Cormorant Upright";
   margin: 0;
@@ -90,9 +90,18 @@ button {
   border-radius: 10px;
 }
 
-/* ----------------- Drinks ---------------- */
+/* ----------------- Chef ---------------- */
 
+.chefMain {
+  background: url("./assets/chefBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+.chefMain h2 {
+  font-family: Bestermind;
+}
 
 /* ----------------- Responsiveness ---------------- */
 
@@ -143,18 +152,39 @@ button {
     width: 159px;
     height: 46px;
   }
-  .DrinksMenu{
+  .DrinksMenu {
     width: 100%;
     flex-direction: row;
   }
-  .wineMenu{
+  .wineMenu {
     width: 33.33%;
+  }
+  .chefMain {
+    padding: 50px;
+  }
+  .chefCont {
+    flex-direction: row;
+  }
+
+  .chefImage {
+    width: 50%;
+  }
+  .chefWord {
+    width: 50%;
+    padding-left: 30px;
   }
 }
 
 @media (min-width: 400px) and (max-width: 810px) {
   .about {
     margin-top: 300px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .chefMain h1 {
+    font-size: 60px;
+    margin-top: 20px;
   }
 }
 
