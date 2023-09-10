@@ -7,6 +7,7 @@ import About from "./Components/About";
 import Menu from "./Components/Menu";
 import Drinks from "./Components/Drinks";
 import ChefSection from "./Components/ChefSection";
+import Testimony from "./Components/Testimony";
 
 function App() {
   const [load, setLoad] = useState(true);
@@ -28,6 +29,7 @@ function App() {
           <Menu />
           <Drinks />
           <ChefSection />
+          <Testimony />
         </div>
       )}
     </>
