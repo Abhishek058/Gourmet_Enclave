@@ -94,13 +94,18 @@ button {
 
 .chefMain {
   background: url("./assets/chefBg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .chefMain h2 {
   font-family: Bestermind;
+}
+
+/* ----------------- Responsiveness ---------------- */
+.videosection {
+  background: url("./assets/videoImg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* ----------------- Responsiveness ---------------- */

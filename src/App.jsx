@@ -8,6 +8,7 @@ import Menu from "./Components/Menu";
 import Drinks from "./Components/Drinks";
 import ChefSection from "./Components/ChefSection";
 import Testimony from "./Components/Testimony";
+import VideoSection from "./Components/VideoSection";
 
 function App() {
   const [load, setLoad] = useState(true);
@@ -30,6 +31,7 @@ function App() {
           <Drinks />
           <ChefSection />
           <Testimony />
+          <VideoSection />
         </div>
       )}
     </>
