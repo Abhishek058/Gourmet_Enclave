@@ -100,12 +100,21 @@ button {
   font-family: Bestermind;
 }
 
-/* ----------------- Responsiveness ---------------- */
+/* ----------------- VideoSection ---------------- */
 .videosection {
   background: url("./assets/videoImg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* ----------------- AwardSection ---------------- */
+
+.AwardsSection{
+  background: url("./assets/chefBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* ----------------- Responsiveness ---------------- */
