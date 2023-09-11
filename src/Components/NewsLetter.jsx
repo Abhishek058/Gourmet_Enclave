@@ -4,8 +4,8 @@ import logo from "../assets/Logo.png";
 function NewsLetter() {
   return (
     <div>
-      <img src={logo} alt="Logo" className="py-4 absolute left-10" />
-      <div className="m-6 p-24 bg-[#0d0d0d] flex flex-col items-center justify-center border-2 border-customYellow">
+      <img src={logo} alt="Logo" className="py-4 absolute left-10 w-[95px]" />
+      <div className="m-6 py-24 bg-[#0d0d0d] flex flex-col items-center justify-center border-2 border-customYellow">
         <h2 className="text-white text-xl xl:text-3xl">Newsletter</h2>
         <svg
           width="40"
@@ -29,10 +29,10 @@ function NewsLetter() {
         <div className="flex gap-x-4">
           <input
             type="email"
-            className="bg-transparent outline-none text-white border-2 pl-2 w-[80%] xl:w-[400px]"
+            className="bg-transparent outline-none text-white border-2 pl-2 w-[80%] sm:w-[100px] xl:w-[400px]"
             placeholder="Email...."
           />
-          <button className="w-[90px] h-[46px]  bg-customYellow border-2 border-customYellow font-semibold hover:bg-black hover:text-customYellow xl:h-[60px] w-[120px]">
+          <button className="w-[100px] h-[46px]  bg-customYellow border-2 border-customYellow font-semibold hover:bg-black hover:text-customYellow xl:h-[60px] w-[120px]">
             Subscribe
           </button>
         </div>

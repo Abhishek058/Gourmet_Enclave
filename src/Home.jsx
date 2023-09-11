@@ -14,6 +14,7 @@ import PhotoGalary from "./Components/PhotoGalary";
 import NewsLetter from "./Components/NewsLetter";
 import FindUs from "./Components/FindUs";
 import Footer from "./Components/Footer";
+import Booking from "./Components/Booking";
 
 function Home() {
   const [load, setLoad] = useState(true);
@@ -33,6 +34,7 @@ function Home() {
           <Header />
           <About />
           <Menu />
+          <Booking />
           <Drinks />
           <ChefSection />
           <Testimony />
