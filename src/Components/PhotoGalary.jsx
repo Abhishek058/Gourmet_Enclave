@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import { React } from "react";
 import gal1 from "../assets/gal1.jpg";
 import gal2 from "../assets/gal2.jpg";
 import gal3 from "../assets/gal3.jpg";
@@ -28,7 +28,7 @@ function PhotoGalary() {
     gal6,
   ];
   return (
-    <div className="bg-[#0d0d0d] flex flex-col py-12 xl:flex-row">
+    <div className="bg-[#0d0d0d] h-[600px] flex flex-col py-24 xl:flex-row">
       <div className="GallHeading flex flex-col justify-center p-4 xl:w-[40%]">
         <h2 className="text-white text-2xl xl:text-4xl">Instagram</h2>
         <svg
@@ -51,6 +51,11 @@ function PhotoGalary() {
           of culinary artistry and memorable moments. From mouthwatering dishes
           to the warm ambiance, it's a feast for your senses.
         </p>
+        <button className="w-[139px] h-[46px] text-white bg-customYellow border-2 border-customYellow font-semibold hover:bg-black">
+          <a href="https://www.instagram.com/Gourmet_Enclave" target="_blank">
+            View More
+          </a>
+        </button>
       </div>
       <div className="InstaGal flex flex-row p-4 gap-x-6 overflow-x-hidden xl:w-[60%]">
         {images.map((image, index) => (

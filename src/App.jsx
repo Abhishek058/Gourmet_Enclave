@@ -11,6 +11,7 @@ import Testimony from "./Components/Testimony";
 import VideoSection from "./Components/VideoSection";
 import Awards from "./Components/Awards";
 import PhotoGalary from "./Components/PhotoGalary";
+import NewsLetter from "./Components/NewsLetter";
 
 function App() {
   const [load, setLoad] = useState(true);
@@ -36,6 +37,7 @@ function App() {
           <VideoSection />
           <Awards />
           <PhotoGalary />
+          <NewsLetter />
         </div>
       )}
     </>
