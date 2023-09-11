@@ -110,7 +110,7 @@ button {
 
 /* ----------------- AwardSection ---------------- */
 
-.AwardsSection{
+.AwardsSection {
   background: url("./assets/chefBg.png");
   background-size: cover;
   background-position: center;
@@ -242,4 +242,16 @@ button {
 }
 
 @media (min-width: 800px) {
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-294px * 9));
+  }
+}
+.animate-scroll {
+  animation: scroll 30s linear infinite;
 }
