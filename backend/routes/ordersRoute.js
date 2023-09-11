@@ -48,7 +48,7 @@ router.get("/:phone", async (request, response) => {
     const { phone } = request.params;
     const order = await Orders.findOne({ phone });
     if (!order) {
-      return response.status(404).json({ message: "Order not found" });
+      return response.status(404).json({ message: "Booking not found" });
     }
     return response.status(200).json({
       data: order,
@@ -65,10 +65,10 @@ router.delete("/:id", async (request, response) => {
     const result = await Orders.findByIdAndDelete(id);
 
     if (!result) {
-      return response.status(404).json({ message: "Order not found" });
+      return response.status(404).json({ message: "Booking not found" });
     }
 
-    return response.status(204).json({ message: "Booking Cancelled" });
+    return response.status(201).json({ message: "Booking Cancelled" });
   } catch (error) {
     console.log(error);
     return response.status(500).json({ message: "Internal server error" });
