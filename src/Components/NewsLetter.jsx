@@ -5,7 +5,7 @@ function NewsLetter() {
   return (
     <div>
       <img src={logo} alt="Logo" className="py-4 absolute left-10" />
-      <div className="m-6 p-4 h-[550px] bg-[#0d0d0d] flex flex-col items-center justify-center border-2 border-customYellow">
+      <div className="m-6 p-24 bg-[#0d0d0d] flex flex-col items-center justify-center border-2 border-customYellow">
         <h2 className="text-white text-xl xl:text-3xl">Newsletter</h2>
         <svg
           width="40"

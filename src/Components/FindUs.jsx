@@ -1,10 +1,10 @@
 import React from "react";
-import FindImg from '../assets/FindusImg.png'
+import FindImg from "../assets/FindusImg.png";
 
 function FindUs() {
   return (
     <div className="FindUsSection flex justify-center items-center">
-      <div className="FindUsMain flex flex-col justify-center items-center p-6 md:flex-row xl:flex-row">
+      <div className="FindUsMain flex flex-col justify-center items-center p-24 md:flex-row xl:flex-row">
         <div className="FindUsText flex flex-col py-4 md:w-1/2 xl:w-1/2">
           <div>
             <h2 className="text-white text-2xl xl:text-3xl">Contact</h2>
@@ -21,7 +21,9 @@ function FindUs() {
                 fill="#DCCA87"
               />
             </svg>
-            <h1 className="text-customYellow text-4xl py-3 xl:text-6xl">Find Us</h1>
+            <h1 className="text-customYellow text-4xl py-3 xl:text-6xl">
+              Find Us
+            </h1>
             <p className="text-gray-400 font-roboto py-4">
               123 Elegance Avenue Prestige Heights Gourmetville, Chandigarh
             </p>
@@ -35,14 +37,14 @@ function FindUs() {
               </p>
             </div>
             <button className="w-[139px] h-[46px] bg-customYellow border-2 border-customYellow font-semibold hover:bg-black hover:text-customYellow">
-          <a href="https://www.google.com/maps/" target="_blank">
-            Visit Us
-          </a>
-        </button>
+              <a href="https://www.google.com/maps/" target="_blank">
+                Visit Us
+              </a>
+            </button>
           </div>
         </div>
         <div className="FindUsImg md:w-1/2 xl:w-1/2">
-            <img src={FindImg} alt="" className="w-[400px]"/>
+          <img src={FindImg} alt="" className="w-[400px]" />
         </div>
       </div>
     </div>
