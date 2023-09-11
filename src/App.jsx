@@ -12,6 +12,7 @@ import VideoSection from "./Components/VideoSection";
 import Awards from "./Components/Awards";
 import PhotoGalary from "./Components/PhotoGalary";
 import NewsLetter from "./Components/NewsLetter";
+import FindUs from "./Components/FindUs";
 
 function App() {
   const [load, setLoad] = useState(true);
@@ -38,6 +39,7 @@ function App() {
           <Awards />
           <PhotoGalary />
           <NewsLetter />
+          <FindUs />
         </div>
       )}
     </>

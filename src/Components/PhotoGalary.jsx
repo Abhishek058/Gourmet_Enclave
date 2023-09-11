@@ -28,7 +28,7 @@ function PhotoGalary() {
     gal6,
   ];
   return (
-    <div className="bg-[#0d0d0d] h-[600px] flex flex-col py-24 xl:flex-row">
+    <div className="bg-[#0d0d0d] flex flex-col py-24 xl:flex-row">
       <div className="GallHeading flex flex-col justify-center p-4 xl:w-[40%]">
         <h2 className="text-white text-2xl xl:text-4xl">Instagram</h2>
         <svg
@@ -63,7 +63,7 @@ function PhotoGalary() {
             key={index}
             src={image}
             alt=""
-            className="transition-opacity duration-1000 border-2 border-customYellow hover:opacity-40 cursor-pointer animate-scroll"
+            className="w-[294px] h-[423px] transition-opacity duration-1000 border-2 border-customYellow hover:opacity-40 cursor-pointer animate-scroll"
           />
         ))}
       </div>
