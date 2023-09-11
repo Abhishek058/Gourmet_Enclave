@@ -26,6 +26,9 @@ Experience the epitome of culinary delight through our online reservation platfo
 4. Fill in your details and group size.
 5. Confirm your reservation and receive a confirmation email.
 
+![image](https://github.com/Abhishek058/Gourmet_Enclave/assets/101443776/ef414ee9-2471-427c-8c8a-5ae6f1053281)
+
+
 For developers:
 
 1. Clone the repository: `git clone https://github.com/yourusername/gourmet-enclave.git`
