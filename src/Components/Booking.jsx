@@ -1,13 +1,10 @@
-import React from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import { BsFillCalendarCheckFill } from "react-icons/bs";
+import logo from "../assets/Logo.png";
+import React, { useState } from "react";
+import axios from "axios";
 
 function Booking() {
-  const person = [
-    { op: "No. of people" },
-    { op: "1 Person" },
-    { op: "2 People" },
-    { op: "3 People" },
-    { op: "4 People" },
-  ];
   const time = [
     { slot: "Select time slot:" },
     { slot: "10:00 AM - 11:00 AM" },
@@ -23,8 +20,41 @@ function Booking() {
     { slot: "08:00 PM - 09:00 PM" },
   ];
 
+  const [personCount, setPersonCount] = useState("");
+  const [date, setDate] = useState("");
+  const [timeSlot, setTimeSlot] = useState("");
+  const [phone, setPhone] = useState("");
+  const navigate = useNavigate();
+
+  const handleSaveOrder = () => {
+    const data = {
+      personCount,
+      date,
+      timeSlot,
+      phone,
+    };
+    axios
+      .post("http://localhost:5432/orders", data)
+      .then((response) => {
+        navigate("/");
+        document.getElementById(
+          "mybooking"
+        ).innerHTML = `Your Booking is for ${date} for ${personCount} person for timeSlot: ${timeSlot},
+        You can find your Booking by your phone number: ${phone} Your Booking Id is: ${response.data._id}`;
+        setDate("");
+        setPersonCount("");
+        setPhone("");
+        setTimeSlot("");
+      })
+      .catch((error) => {
+        alert("An error occured, while creating");
+        console.log(error);
+      });
+  };
+
   return (
     <div>
+      <img src={logo} alt="Logo" className="py-4 absolute left-10 w-[65px]" />
       <div className="m-6 py-24 bg-[#0d0d0d] flex flex-col items-center justify-center border-2 border-customYellow">
         <h2 className="text-white text-2xl xl:text-3xl">Reservation</h2>
         <svg
@@ -44,43 +74,36 @@ function Booking() {
           Book A Table
         </h1>
         <div className="flex flex-col xl:flex-row gap-x-14">
-          <select
+          <input
+            type="number"
             name="Person"
-            id=""
+            value={personCount}
+            placeholder="No. of people"
             required
+            onChange={(e) => setPersonCount(e.target.value)}
+            min="1"
+            max="10"
             className="w-[300px] h-[50px] bg-transparent text-gray-400 text-xl outline-none border-2 border-customYellow my-6 pl-4"
-          >
-            {person.map((item, index) => {
-              return (
-                <option
-                  value=""
-                  className="bg-black border-none text-xl"
-                  id={index}
-                >
-                  {item.op}
-                </option>
-              );
-            })}
-          </select>
+          />
           <input
             type="text"
             required
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
             placeholder="DD-MM-YYYY"
             className="w-[300px] h-[50px] bg-transparent text-gray-400 text-xl outline-none border-2 border-customYellow my-6 pl-4"
           />
 
           <select
-            name="Person"
-            id=""
+            value={timeSlot}
+            onChange={(e) => {
+              setTimeSlot(e.target.value);
+            }}
             className="w-[300px] h-[50px] bg-transparent text-gray-400 text-xl outline-none border-2 border-customYellow my-6 pl-4"
           >
             {time.map((item, index) => {
               return (
-                <option
-                  value=""
-                  className="bg-black border-none text-xl"
-                  id={index}
-                >
+                <option className="bg-black border-none text-xl" key={index}>
                   {item.slot}
                 </option>
               );
@@ -91,15 +114,19 @@ function Booking() {
           <input
             type="number"
             placeholder="Phone"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
             required
             className="bg-transparent text-gray-400 text-xl outline-none border-2 border-customYellow pl-2"
           />
-          <button className="w-[70px] bg-customYellow font-semibold">
+          <button
+            className="w-[70px] bg-customYellow font-semibold"
+            onClick={handleSaveOrder}
+          >
             Book
           </button>
         </div>
         <div className="flex">
-          <input type="checkbox" name="" id="" required />
           <p className="text-white pl-2">
             <a
               href="https://docs.google.com/document/d/e/2PACX-1vTcm2a51TqyRRt96z4DXKGz_DytKkH9oMXtnuQ9bv6T6BaxseWEj1vHus_TAFSJlvqbMySG36jg2bKn/pub"
@@ -109,7 +136,15 @@ function Booking() {
             </a>
           </p>
         </div>
+        <p className="text-green-300 flex gap-x-2 text-xl items-center mt-6">
+          <Link to={"/YourBooking"}>check you booking</Link>
+          <BsFillCalendarCheckFill />
+        </p>
       </div>
+      <div
+        className="flex text-center justify-center text-blue-400 font-roboto text-lg"
+        id="mybooking"
+      ></div>
     </div>
   );
 }
