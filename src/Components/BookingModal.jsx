@@ -1,5 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect, useNavigate } from "react";
+import { Link, useParams } from "react-router-dom";
+import axios from "axios";
 
 function BookingModal({ order }) {
   const booking = [
@@ -9,7 +10,6 @@ function BookingModal({ order }) {
     { id: `${order.date}`, name: "Booking On: " },
     { id: `${order.timeSlot}`, name: "Time Slot: " },
   ];
-
   return (
     <div className="text-white flex flex-col items-center justify-center">
       <h1 className="py-8 text-6xl font-bold">Order Details</h1>
@@ -22,7 +22,7 @@ function BookingModal({ order }) {
         ))}
       </div>
       <button className="m-8 px-4 py-3 bg-red-600 font-semibold rounded-xl hover:bg-red-500 hover:text-black">
-        <Link to={"/order/Cancel/:id"}>Cancel Booking</Link>
+        <Link to={`/order/Cancel/${order._id}`}>Cancel Booking</Link>
       </button>
     </div>
   );
