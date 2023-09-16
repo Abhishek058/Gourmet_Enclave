@@ -32,30 +32,42 @@ router.post("/", async (request, response) => {
   }
 });
 
-// router.get("/", async (request, response) => {
-//   try {
-//     const order = await Orders.find();
-//     return response.status(200).json({
-//       data: order,
-//     });
-//   } catch (error) {
-//     console.log(error);
-//   }
-// });
-
-router.get("/:phone", async (request, response) => {
+router.get("/", async (request, response) => {
   try {
-    const { phone } = request.params;
-    const order = await Orders.findOne({ phone });
-    if (!order) {
-      return response.status(404).json({ message: "Booking not found" });
-    }
+    const order = await Orders.find();
     return response.status(200).json({
       data: order,
     });
   } catch (error) {
-    console.error(error);
-    response.status(500).json({ message: "Internal server error" });
+    console.log(error);
+  }
+});
+
+// router.get("/:id", async (request, response) => {
+//   try {
+//     const { id } = request.params;
+//     const order = await Orders.findById({ id });
+//     if (!order) {
+//       return response.status(404).json({ message: "Booking not found" });
+//     }
+//     return response.status(200).json({
+//       data: order,
+//     });
+//   } catch (error) {
+//     console.error(error);
+//     response.status(500).json({ message: "Internal server error" });
+//   }
+// });
+
+router.get("/:id", async (request, response) => {
+  try {
+    const { id } = request.params;
+    const books = await Orders.findById(id);
+    return response.status(200).json({
+      data: books,
+    });
+  } catch (error) {
+    console.log(error);
   }
 });
 

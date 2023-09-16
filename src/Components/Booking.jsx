@@ -137,7 +137,7 @@ function Booking() {
           </p>
         </div>
         <p className="text-green-300 flex gap-x-2 text-xl items-center mt-6">
-          <Link to={"/YourBooking"}>check you booking</Link>
+          <Link to={"/order/ShowBooking"}>check you booking</Link>
           <BsFillCalendarCheckFill />
         </p>
       </div>
