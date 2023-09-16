@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import ErrorPage from "./ErrorPage";
+import BookingModal from "./BookingModal";
 
 function YourBooking() {
   const [order, setOrder] = useState([]);
@@ -19,11 +20,7 @@ function YourBooking() {
       });
   }, [id]);
 
-  return (
-    <>
-      {order ? <ErrorPage /> : <div>Order ID: {order._id}</div>}
-    </>
-  );
+  return <>{order ? <BookingModal order={order} /> : <ErrorPage />}</>;
 }
 
 export default YourBooking;

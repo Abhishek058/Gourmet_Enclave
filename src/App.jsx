@@ -4,6 +4,7 @@ import { Routes, Route, BrowserRouter, Switch } from "react-router-dom";
 import ShowBooking from "./Components/ShowBooking";
 import YourBooking from "./Components/YourBooking";
 import ErrorPage from "./Components/ErrorPage";
+import CancelBooking from "./Components/CancelBooking";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="" element={<Home />} />
         <Route path="/order/ShowBooking" element={<ShowBooking />} />
         <Route path="/order/YourBooking/:id" element={<YourBooking />} />
+        <Route path="/order/Cancel/:id" element={<CancelBooking />} />
         <Route path="*" element={<ErrorPage />}></Route>
       </Routes>
     </BrowserRouter>
