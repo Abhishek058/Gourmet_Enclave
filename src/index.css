@@ -125,9 +125,19 @@ button {
   background-position: center;
   background-repeat: no-repeat;
 }
+/* ----------------- Booking Page ---------------- */
 
 .bookingPage {
   background: url("https://img.freepik.com/free-photo/restaurant-hall-with-lots-table_140725-6309.jpg?w=1800&t=st=1694769201~exp=1694769801~hmac=7f48ce8d1ba47bd1f1c4f737e499520ea6021fd4967368baa397fda48a373d82");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ----------------- Error Page ---------------- */
+
+.errorPage {
+  background: url("./assets/ErrorBg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

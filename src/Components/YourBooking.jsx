@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import ErrorPage from "./ErrorPage";
 
 function YourBooking() {
   const [order, setOrder] = useState([]);
@@ -19,13 +20,9 @@ function YourBooking() {
   }, [id]);
 
   return (
-    <div className="text-white">
-      {order ? (
-        <h1 className="text-white">Order not found</h1>
-      ) : (
-        <div>Order ID: {order._id}</div>
-      )}
-    </div>
+    <>
+      {order ? <ErrorPage /> : <div>Order ID: {order._id}</div>}
+    </>
   );
 }
 
