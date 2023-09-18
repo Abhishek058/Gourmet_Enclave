@@ -2,14 +2,14 @@
 
 Welcome to the Gourmet Enclave Restaurant Order Booking Website! 
 
-![loader](https://github.com/Abhishek058/Gourmet_Enclave/assets/101443776/d17a4244-414c-4387-9394-b97355c257b4)
+![image](https://github.com/Abhishek058/Gourmet_Enclave/assets/101443776/aa75c1c9-2e1d-432e-af2d-eae224bfa5e4)
 
 
 Experience the epitome of culinary delight through our online reservation platform. Immerse yourself in a world of gourmet flavors, where luxury meets taste. 
 
 ## Features
 
-![image](https://github.com/Abhishek058/Gourmet_Enclave/assets/101443776/aa75c1c9-2e1d-432e-af2d-eae224bfa5e4)
+![image](https://github.com/Abhishek058/Gourmet_Enclave/assets/101443776/3061d8b4-4a06-4f11-bee5-e0132c91d616)
 
 
 - **Seamless Reservations**: Easily book your table online, ensuring a hassle-free dining experience.
@@ -50,5 +50,6 @@ We value your feedback! If you encounter any issues or have suggestions, please 
 - [Abhishek](https://github.com/Abhishek058)
 
 Embark on a culinary journey like no other with Gourmet Enclave. Elevate your dining experience today!
-![image](https://github.com/Abhishek058/Gourmet_Enclave/assets/101443776/0cc2afea-3fa9-491d-8b45-f1e7c6e9d777)
 
+
+![loader](https://github.com/Abhishek058/Gourmet_Enclave/assets/101443776/d17a4244-414c-4387-9394-b97355c257b4)
