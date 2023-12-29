@@ -34,7 +34,7 @@ function Booking() {
       phone,
     };
     axios
-      .post("http://localhost:5432/orders", data)
+      .post("https://gourmet-enclave.onrender.com/orders", data)
       .then((response) => {
         navigate("/");
         document.getElementById(

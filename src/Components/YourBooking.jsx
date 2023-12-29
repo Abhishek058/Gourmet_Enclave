@@ -10,7 +10,7 @@ function YourBooking() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5432/orders/${id}`)
+      .get(`https://gourmet-enclave.onrender.com/orders/${id}`)
       .then((response) => {
         setOrder(response.data.data);
       })

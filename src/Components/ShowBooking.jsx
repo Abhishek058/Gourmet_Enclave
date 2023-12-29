@@ -8,7 +8,7 @@ function ShowBooking() {
   // const [setOrders] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5432/orders");
+    axios.get("https://gourmet-enclave.onrender.com/orders");
   });
 
   const handleCheckButtonClick = () => {

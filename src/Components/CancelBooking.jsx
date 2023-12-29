@@ -9,7 +9,7 @@ function CancelBooking() {
   const { id } = useParams();
   const handleDelete = () => {
     axios
-      .delete(`http://localhost:5432/orders/${id}`)
+      .delete(`https://gourmet-enclave.onrender.com/orders/${id}`)
       .then(() => {
         alert("Your booking has been Cancelled");
       })
