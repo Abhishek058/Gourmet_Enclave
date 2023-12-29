@@ -26,7 +26,7 @@ function About() {
             our culinary journey today.
           </p>
           <button className="about-btn bg-customYellow w-[129px] h-[36px] text-black font-bold mt-7 hover:bg-black hover:text-customYellow hover:border-2 border-customYellow">
-            <a href="#">Know More</a>
+            <a href="/">Know More</a>
           </button>
         </div>
         <div className="absolte knifeDiv flex">
@@ -54,7 +54,7 @@ function About() {
             heritage.
           </p>
           <button className="about-btn bg-customYellow w-[129px] h-[36px] text-black font-bold mt-7 hover:bg-black hover:text-customYellow hover:border-2 border-customYellow">
-            <a href="#">Know More</a>
+            <a href="/">Know More</a>
           </button>
         </div>
       </div>

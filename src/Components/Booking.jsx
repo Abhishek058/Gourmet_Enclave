@@ -1,4 +1,4 @@
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BsFillCalendarCheckFill } from "react-icons/bs";
 import logo from "../assets/Logo.png";
 import React, { useState } from "react";
@@ -130,7 +130,7 @@ function Booking() {
           <p className="text-white pl-2">
             <a
               href="https://docs.google.com/document/d/e/2PACX-1vTcm2a51TqyRRt96z4DXKGz_DytKkH9oMXtnuQ9bv6T6BaxseWEj1vHus_TAFSJlvqbMySG36jg2bKn/pub"
-              target="_blank"
+              target="blank"
             >
               Tems & Condition Applied
             </a>

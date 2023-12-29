@@ -37,7 +37,7 @@ function FindUs() {
               </p>
             </div>
             <button className="w-[139px] h-[46px] bg-customYellow border-2 border-customYellow font-semibold hover:bg-black hover:text-customYellow">
-              <a href="https://www.google.com/maps/" target="_blank">
+              <a href="https://www.google.com/maps/" target="blank">
                 Visit Us
               </a>
             </button>

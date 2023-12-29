@@ -1,7 +1,5 @@
-import React, { useState, useEffect, useNavigate } from "react";
-import { Link, useParams } from "react-router-dom";
-import axios from "axios";
-
+import React from "react";
+import { Link } from "react-router-dom";
 function BookingModal({ order }) {
   const booking = [
     { id: `${order._id}`, name: "Booking Id: " },

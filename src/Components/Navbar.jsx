@@ -59,7 +59,7 @@ function Navbar() {
             </li>
           ))}
         </div>
-        <div className="search bg-transparent hidden flex items-center absolute right-10 border-b border-gray-500">
+        <div className="search bg-transparent hidden items-center absolute right-10 border-b border-gray-500">
           <input
             className="input-text text-gray-300 outline-none bg-transparent p-2"
             type="text"
@@ -133,7 +133,7 @@ function Navbar() {
         <div className="text-white w-full h-screen flex items-center">
           <ul className="hiddenNavList ml-10 text-2xl font-bold">
             <li className="transition delay-100 hover:text-customYellow">
-              <a href="">HOME</a>
+              <a href="/">HOME</a>
             </li>
             <li className="transition delay-100 hover:text-customYellow">
               <p
@@ -168,10 +168,10 @@ function Navbar() {
               </div>
             </li>
             <li className="transition delay-100 hover:text-customYellow">
-              <a href="">CONTACT US</a>
+              <a href="/">CONTACT US</a>
             </li>
             <li className="transition delay-100 hover:text-customYellow">
-              <a href="">BLOG</a>
+              <a href="/">BLOG</a>
             </li>
           </ul>
         </div>

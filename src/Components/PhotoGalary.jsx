@@ -52,7 +52,7 @@ function PhotoGalary() {
           to the warm ambiance, it's a feast for your senses.
         </p>
         <button className="w-[139px] h-[46px] text-white bg-customYellow border-2 border-customYellow font-semibold hover:bg-black">
-          <a href="https://www.instagram.com/Gourmet_Enclave" target="_blank">
+          <a href="https://www.instagram.com/Gourmet_Enclave" target="blank">
             View More
           </a>
         </button>

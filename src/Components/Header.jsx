@@ -15,7 +15,7 @@ function Header() {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  });
 
   return (
     <div className="header flex justify-center items-center text-white relative">
@@ -31,7 +31,7 @@ function Header() {
             is ample terrain for us to explore and cultivate.
           </p>
           <button className="bg-customYellow w-[159px] h-[46px] text-black font-bold mt-7 hover:bg-black hover:text-customYellow hover:border-2 border-customYellow">
-            <a href="#">Explore Menu</a>
+            <a href="/">Explore Menu</a>
           </button>
         </div>
         <div className="imageheaderDiv flex justify-center">

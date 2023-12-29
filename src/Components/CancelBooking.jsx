@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 import logo from "../assets/Logo.png";
 import { useNavigate } from "react-router-dom";
@@ -24,7 +24,7 @@ function CancelBooking() {
   };
   return (
     <div className="flex flex-col justify-center items-center text-white w-full h-screen">
-      <img src={logo} className="w-[150px] m-6" />
+      <img src={logo} alt="logo" className="w-[150px] m-6" />
       <div className="flex flex-col items-center">
         <h1 className="text-3xl font-semibold py-10 text-center">
           Are you sure you want to cancel

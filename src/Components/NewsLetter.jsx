@@ -32,7 +32,7 @@ function NewsLetter() {
             className="bg-transparent outline-none text-white border-2 pl-2 w-[80%] sm:w-[100px] xl:w-[400px]"
             placeholder="Email...."
           />
-          <button className="w-[100px] h-[46px]  bg-customYellow border-2 border-customYellow font-semibold hover:bg-black hover:text-customYellow xl:h-[60px] w-[120px]">
+          <button className="w-[100px] h-[46px]  bg-customYellow border-2 border-customYellow font-semibold hover:bg-black hover:text-customYellow xl:h-[60px]">
             Subscribe
           </button>
         </div>

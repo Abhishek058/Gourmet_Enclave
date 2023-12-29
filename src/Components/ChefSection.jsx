@@ -6,7 +6,7 @@ function ChefSection() {
     <div className="chefMain flex items-center justify-center text-white">
       <div className="chefCont flex flex-col p-5">
         <div className="chefImage flex items-center justify-center">
-          <img src={chefImg} />
+          <img src={chefImg} alt="chef"/>
         </div>
         <div className="chefWord flex flex-col justify-center py-7">
           <h3 className="text-2xl font-semibold">Chef's Word</h3>

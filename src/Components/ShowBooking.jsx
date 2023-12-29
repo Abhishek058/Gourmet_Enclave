@@ -5,18 +5,11 @@ import axios from "axios";
 function ShowBooking() {
   const [bookingId, setBookingId] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [orders, setOrders] = useState([]);
+  // const [setOrders] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5432/orders")
-      .then((response) => {
-        setOrders(response.data.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+    axios.get("http://localhost:5432/orders");
+  });
 
   const handleCheckButtonClick = () => {
     if (bookingId !== "" && phoneNumber !== "") {

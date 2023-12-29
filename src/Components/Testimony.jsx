@@ -64,7 +64,7 @@ function Testimony() {
                 <div>
                   <img
                     src={item.img}
-                    alt="Customer Image"
+                    alt="Customer"
                     className="w-[520px] xl:w-[300px]"
                   />
                   <svg
