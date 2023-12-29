@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./Home";
-import { Routes, Route, BrowserRouter, Switch } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import ShowBooking from "./Components/ShowBooking";
 import YourBooking from "./Components/YourBooking";
 import ErrorPage from "./Components/ErrorPage";

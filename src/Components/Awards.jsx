@@ -62,7 +62,7 @@ function Awards() {
                   <img
                     src={item.img}
                     alt="award"
-                    className="w-[150px] h-[75px] xl:w-[250px] h-[100px]"
+                    className="w-[150px] h-[75px] xl:w-[250px]"
                   />
                 </div>
                 <div className="flex flex-col px-4">
