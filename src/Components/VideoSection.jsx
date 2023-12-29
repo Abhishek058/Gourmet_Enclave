@@ -30,7 +30,7 @@ function VideoSection() {
                 }}
               />
               <iframe
-                className="md:w-[630px] h-[350px] xl:w-[1000px]"
+                className="md:w-[630px] h-[550px] xl:w-[1000px]"
                 src="https://drive.google.com/file/d/1eIyr_ZyqP2eMMhQrk5016SV9oM_IqrNI/preview"
                 title="Feel The Luxury"
               ></iframe>
