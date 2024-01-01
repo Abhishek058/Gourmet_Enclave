@@ -3,46 +3,24 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import ErrorPage from "./ErrorPage";
 import BookingModal from "./BookingModal";
-import loader from "../assets/loader.gif";
 
 function YourBooking() {
-  const [order, setOrder] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [order, setOrder] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
-    setLoading(true);
-
     axios
       .get(`https://gourmet-enclave.onrender.com/orders/${id}`)
       .then((response) => {
         setOrder(response.data.data);
-        setLoading(false);
       })
       .catch((error) => {
         console.log(error);
-        setLoading(false);
-        alert("Order not found");
+        setOrder(null);
       });
   }, [id]);
-  
-  if (!loading && order.length === 0) {
-    setLoading(false);
-  }
 
-  return (
-    <>
-      {loading ? (
-        <div className="loader-div">
-          <img src={loader} alt="Loading..." />
-        </div>
-      ) : order.length !== 0 ? (
-        <BookingModal order={order} />
-      ) : (
-        <ErrorPage />
-      )}
-    </>
-  );
+  return <>{order !== null ? <BookingModal order={order} /> : <ErrorPage />}</>;
 }
 
 export default YourBooking;
