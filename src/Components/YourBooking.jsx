@@ -24,6 +24,9 @@ function YourBooking() {
         setLoading(false);
         alert("Order not found");
       });
+    if (order.length === 0) {
+      setLoading(false);
+    }
   }, [id]);
 
   return (
